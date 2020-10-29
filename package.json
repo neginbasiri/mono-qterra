@@ -1,0 +1,15 @@
+{
+  "main": "index.js",
+  "name": "mono-qterra",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prestart": "lerna run libbuild --stream",
+    "start": "lerna run start --stream"
+  }
+}
